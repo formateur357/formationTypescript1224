@@ -9,31 +9,32 @@ Objectif : Utiliser la décomposition de paramètres dans une fonction, et l’e
 - Écrivez une fonction filterItemsByCategory(items: Item[], category: Category): Item[] qui retourne un nouveau tableau filtré par catégorie.
 - Appelez cette fonction et utilisez une décomposition du tableau retourné dans des variables individuelles (par exemple, pour tester la décomposition si vous obtenez un tableau filtré).
 */
+function exo1() {
+  enum Category {
+    BOOK,
+    MUSIC,
+  }
 
-enum Category {
-  BOOK,
-  MUSIC,
+  type Item = {
+    title: string;
+    price: number;
+    category: Category;
+  };
+
+  const items: Item[] = [
+    { title: "Livre A", price: 10, category: Category.BOOK },
+    { title: "Musique B", price: 15, category: Category.MUSIC },
+    { title: "Livre C", price: 20, category: Category.BOOK },
+  ];
+
+  function filterItemsByCategory(items: Item[], category: Category): Item[] {
+    return items.filter((item) => item.category === category);
+  }
+
+  const filteredBooks = filterItemsByCategory(items, Category.BOOK);
+  const [firstBook, secondBook] = filteredBooks;
+
+  console.log("Livres filtres: ", filteredBooks);
+  console.log("Premier livre: ", firstBook);
+  console.log("Second livre: ", secondBook);
 }
-
-type Item = {
-  title: string;
-  price: number;
-  category: Category;
-};
-
-const items: Item[] = [
-  { title: "Livre A", price: 10, category: Category.BOOK },
-  { title: "Musique B", price: 15, category: Category.MUSIC },
-  { title: "Livre C", price: 20, category: Category.BOOK },
-];
-
-function filterItemsByCategory(items: Item[], category: Category): Item[] {
-  return items.filter((item) => item.category === category);
-}
-
-const filteredBooks = filterItemsByCategory(items, Category.BOOK);
-const [firstBook, secondBook] = filteredBooks;
-
-console.log("Livres filtres: ", filteredBooks);
-console.log("Premier livre: ", firstBook);
-console.log("Second livre: ", secondBook);
