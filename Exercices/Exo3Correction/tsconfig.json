@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Version de JavaScript à générer
+    "module": "commonjs",                     // Système de modules (peut être "ES6", "amd", etc.)
+    "outDir": "./dist",                       // Répertoire de sortie des fichiers compilés
+    "rootDir": "./src",                       // Répertoire racine des fichiers source
+    "strict": true,                           // Activer toutes les vérifications de type strictes
+    "esModuleInterop": true,                  // Pour une meilleure compatibilité avec les modules ES
+    "forceConsistentCasingInFileNames": true, // Assurer la cohérence des majuscules/minuscules
+    "skipLibCheck": true                      // Ignorer la vérification des fichiers de déclaration
+  },
+  "include": ["src/**/*"],                     // Inclure tous les fichiers dans src/
+  "exclude": ["node_modules", "**/*.spec.ts"]  // Exclure node_modules et les fichiers de test
+}

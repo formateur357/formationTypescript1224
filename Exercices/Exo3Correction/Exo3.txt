@@ -1,0 +1,66 @@
+Exercice : Gestion d'un Système de Véhicules
+
+Contexte
+
+Vous êtes chargé de développer une petite application de gestion de véhicules pour une entreprise de location de voitures.
+L'application doit gérer différents types de véhicules, leurs caractéristiques et leurs comportements.
+
+Objectifs
+
+- Créer une classe de base Vehicule avec des propriétés et des méthodes communes à tous les véhicules.
+- Créer des classes dérivées (Voiture, Camion, Moto) qui héritent de la classe Vehicule et qui ajoutent des propriétés ou des méthodes spécifiques.
+- Implémenter des méthodes surchargées si nécessaire.
+- Créer des instances des différentes classes et démontrer leur utilisation.
+
+Détails de l'Exercice
+
+1. Classe de Base : Vehicule
+
+Propriétés :
+
+- marque (string) : La marque du véhicule.
+- modele (string) : Le modèle du véhicule.
+- annee (number) : L'année de fabrication.
+- kilometrage (number) : Le kilométrage actuel.
+
+Méthodes :
+
+- demarrer() : Affiche un message indiquant que le véhicule démarre.
+- arreter() : Affiche un message indiquant que le véhicule s'arrête.
+- afficherDetails() : Affiche les détails du véhicule.
+
+2. Classes Dérivées
+a. Classe Voiture
+Propriétés Supplémentaires :
+
+- nombrePortes (number) : Nombre de portes.
+- typeCarburant (string) : Type de carburant (ex. essence, diesel, électrique).
+
+Méthodes Supplémentaires :
+
+- ouvrirCoffre() : Affiche un message indiquant que le coffre s'ouvre.
+
+b. Classe Camion
+Propriétés Supplémentaires :
+
+- capaciteCharge (number) : Capacité de charge en tonnes.
+- nombreEssieux (number) : Nombre d'essieux.
+
+Méthodes Supplémentaires :
+
+- charger() : Affiche un message indiquant que le camion est en train de charger.
+
+c. Classe Moto
+Propriétés Supplémentaires :
+
+- typeMoteur (string) : Type de moteur (ex. 2 temps, 4 temps).
+- hasSidecar (boolean) : Indique si la moto a un sidecar.
+
+Méthodes Supplémentaires :
+
+- faireWheelie() : Affiche un message indiquant que la moto fait un wheelie.
+
+4. Implémentation et Test
+- Créer des instances de chaque classe dérivée (Voiture, Camion, Moto).
+- Appeler les méthodes de chaque instance pour démontrer leur comportement.
+- Utiliser la méthode afficherDetails() pour chaque véhicule, en s'assurant qu'elle affiche les informations spécifiques à chaque type de véhicule.

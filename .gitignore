@@ -1,0 +1,25 @@
+# Ignorer les fichiers compilés JavaScript
+*.js
+
+# Ignorer les fichiers source map
+*.js.map
+
+# Ignorer le répertoire de distribution
+**/dist/
+**/build/
+
+# Ignorer les modules Node.js
+**/node_modules/
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers temporaires
+*.tmp
+
+# Ignorer l’environnement de développement local
+.env
+
+*.generated.json
+*.d.ts
+**/package-lock.json
