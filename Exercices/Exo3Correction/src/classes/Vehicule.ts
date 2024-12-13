@@ -1,19 +1,14 @@
 export class Vehicule {
-  protected marque: string;
-  protected modele: string;
-  protected annee: number;
-  protected kilometrage: number;
+  public id: number;
+  public static otherId: number = 0;
 
   constructor(
-    marque: string,
-    modele: string,
-    annee: number,
-    kilometrage: number
+    protected marque: string,
+    protected modele: string,
+    protected annee: number,
+    protected kilometrage: number
   ) {
-    this.marque = marque;
-    this.modele = modele;
-    this.annee = annee;
-    this.kilometrage = kilometrage;
+    this.id = Vehicule.otherId++;
   }
 
   public demarrer(): void {

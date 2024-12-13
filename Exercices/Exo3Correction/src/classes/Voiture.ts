@@ -1,20 +1,15 @@
 import { Vehicule } from "./Vehicule";
 
 export class Voiture extends Vehicule {
-  private nombrePortes: number;
-  private typeCarburant: string;
-
   constructor(
     marque: string,
     modele: string,
     annee: number,
     kilometrage: number,
-    nombrePortes: number,
-    typeCarburant: string
+    private nombrePortes: number,
+    private typeCarburant: string
   ) {
     super(marque, modele, annee, kilometrage);
-    this.nombrePortes = nombrePortes;
-    this.typeCarburant = typeCarburant;
   }
 
   public ouvrirCoffre(): void {
