@@ -1,5 +1,3 @@
-import { Vehicule } from "./Vehicule";
-
 export class Camion extends Vehicule {
   private capaciteCharge: number; // en tonnes
   private nombreEssieux: number;

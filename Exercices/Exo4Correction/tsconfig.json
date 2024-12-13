@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          // Version ECMAScript cible
+    "module": "commonjs",                     // Module système utilisé
+    "rootDir": "./src",                       // Dossier racine des sources
+    "outDir": "./dist",                       // Dossier de sortie des fichiers compilés
+    "strict": true,                           // Activer toutes les vérifications de type strict
+    "esModuleInterop": true,                  // Compatibilité interopérabilité avec les modules ES
+    "forceConsistentCasingInFileNames": true  // Force la casse cohérente dans les noms de fichiers
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

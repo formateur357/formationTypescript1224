@@ -1,5 +1,3 @@
-import { Vehicule } from "./Vehicule";
-
 export class Voiture extends Vehicule {
   constructor(
     marque: string,

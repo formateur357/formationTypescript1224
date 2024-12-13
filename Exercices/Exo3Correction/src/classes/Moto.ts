@@ -1,5 +1,3 @@
-import { Vehicule } from "./Vehicule";
-
 export class Moto extends Vehicule {
   private typeMoteur: string;
   private hasSidecar: boolean;
