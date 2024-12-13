@@ -1,3 +1,5 @@
+type Accepted = number | string | number[] | string[];
+
 function surchargeExemple() {
   // on declare plusieurs pour la fonction 'add' :
   function add(a: number, b: number): number;
@@ -10,10 +12,7 @@ function surchargeExemple() {
   function add(a: string[], b: string[]): string;
 
   // Implementation commune - Notez que typescript exige une seul implementation
-  function add(
-    a: number | string | number[] | string[],
-    b: number | string | number[] | string[]
-  ): number | string {
+  function add(a: Accepted, b: Accepted): number | string {
     if (typeof a === "number" && typeof b === "number") {
       return a + b;
     } else if (typeof a === "string" && typeof b === "string") {
